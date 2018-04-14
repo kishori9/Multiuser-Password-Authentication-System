@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/nestedScrollView"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_height="300dp"
+            android:layout_width="300dp"
+            android:layout_gravity  ="center_horizontal"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:id="@+id/textInputLayoutName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-50dp"
+            android:textColorHint="@color/colorAccent">
+
+            <EditText
+                android:id="@+id/textInputEditName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_name"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorAccent">
+
+            <EditText
+                android:id="@+id/textInputEditEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorAccent">
+
+            <EditText
+                android:id="@+id/textInputEditPassword"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textInputLayoutConfirmPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorAccent">
+
+            <EditText
+                android:id="@+id/textInputEditConfirmPassword"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_confirm_password"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/appCompatButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#f0f0f0"
+            android:background="@color/colorAccent"
+            android:text="@string/text_register"/>
+
+        <TextView
+            android:id="@+id/textViewLinkLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/text_already_member"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+
+</LinearLayout>
+</LinearLayout>
